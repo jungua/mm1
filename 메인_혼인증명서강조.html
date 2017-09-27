@@ -526,10 +526,10 @@ nav li.align_lst a.slct_ui span{width:42px; padding-right:11px;}
 /*-------------------20170927 정우아----------------*/
 /* 170523 추가 _ 개인정보사진 유무표시 --2017027 수정*/
 /*메인리스트 프로필란 사진등록여부노출*/
-.ment_area .info_cer, .ment_area .info_tt, .ment_area .pn_badge{display:inline-block; position:relative; vertical-align:middle; font-family:"NotoSansKR-Regular","sans-serif";}
-.ment_area .info_cer, .ment_txt .info_tt{font-size:12px; letter-spacing:-0.2px; color:#333; margin-bottom:2px;}
-.ment_area .info_cer{color:#ef5d45; text-shadow:1px 0px 1px #ffcabc; font-weight:600;}
-.ment_area .pn_badge{background-color:#29bf00; border-radius:50%; color:#fff; font-weight:400; width:14px; height:14px; line-height:14px; text-align:center; font-size:10px; margin-left:2px; margin-bottom:3px; font-size:11px;}
+.ment_area .info_cer, .ment_area .info_tt, .ment_area .pn_badge{position:relative; vertical-align:middle; font-family:"NotoSansKR-Regular","sans-serif"; top:-3px; margin-bottom:-2px; line-height:20px;}
+.ment_area .info_cer, .ment_txt .info_tt{font-size:12px; letter-spacing:-0.2px; color:#333; margin-bottom:2px; margin-left:3px;}
+.ment_area .info_cer{color:#ef5d45; text-shadow:1px 0px 1px #ffcabc; font-weight:600; margin-left:6px;}
+.ment_area .pn_badge{background-color:#29bf00; border-radius:50%; color:#fff; font-weight:400; width:14px; height:14px; line-height:14px; text-align:center; font-size:10px; font-size:11px; display:inline-block; margin:0 5px 1px 2px;}
 .ment_area .cer_s{background: rgb(249,162,62);
 background: -moz-linear-gradient(top, rgb(249,162,62) 0%, rgb(239,70,35) 100%);
 background: -webkit-linear-gradient(top, rgb(249,162,62) 0%,rgb(239,70,35) 100%);
@@ -742,6 +742,153 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9a23e', end
 <!-- 		</div> -->
 		<!-- 여성프로필등록활성화 배너 //-->
 		<div id="yeo_list" style="position:relative;"><div id="cheongsachorong" class="img_chung on" style="cursor: pointer; display: none;"></div><ul id="yeo_list_1" style="height: 6715px;">
+		<li id="ID_100728">
+		<form name="fmeet_100728" id="fmeet_100728" method="post" onsubmit="return false;" style="margin:0;">
+				<input type="hidden" name="memNo" value="100728">
+				<input type="hidden" name="memNick" value="마지막인연찾음">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'100728','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">4</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUhsK2ZZR0twSXBVYW1waWEzeCtlSUtHZkl4YW1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>					
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">마지막인연찾음
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">안녕하세요. 처음엔 가볍게 시작 하는것도 좋은 방법이라 생각합니다. 그러나 차츰.. 서로의 눈높이를 맞춰가며 취미생활도 같이할 좋은 인연을 만나고 싶네요. 평소 자기관리 잘하고 정직하고 가정적인분 원합니다. 신뢰가 무너지면 모든게 물거품이됩니다. 퇴직후엔 배우자와 맘맞으면 몇개월이든 몇년이든 캠핑카로 전국을 유람할 계획입니다.^^; 사진이 없는분은 사진부터 주시고.. 그럼, 쪽지 기다릴께요~.~다.^^; 사진이 없는분은 사진부터 주시고.. 그럼, 쪽지 기다릴께요~.~                            
+                          <!--20170927 정우아 추가 및 수정-->
+                            <span class="info_cer" style="text-shadow:none; color:#ef5288; border-bottom:1px dashed #e884a9;">혼인관계증명서</span><span class="pn_badge cer_s" style="background:linear-gradient(to bottom, rgb(240, 154, 184) 0%,rgb(238, 75, 156) 100%);">2</span><span class="info_tt">연봉</span><span class="pn_badge">1</span><span class="info_tt">학력</span><span class="pn_badge">1</span><span class="info_tt">차량</span><span class="pn_badge">1</span>
+                          <!--//20170927 정우아 추가 및 수정-->
+						</a>
+					</span>
+				</div>
+				
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'100728', memNick:'마지막인연찾음', memName: '박○○님', memSex:'m', memAge:'53', distance:'경남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 박○○님
+							| 53세
+							| 뱀띠
+							| 경남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_100728">
+		<form name="fmeet_100728" id="fmeet_100728" method="post" onsubmit="return false;" style="margin:0;">
+				<input type="hidden" name="memNo" value="100728">
+				<input type="hidden" name="memNick" value="마지막인연찾음">
+				<input type="hidden" name="meetSlct" value="0">
+				<input type="hidden" name="meetText" value="">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'100728','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">4</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUhsK2ZZR0twSXBVYW1waWEzeCtlSUtHZkl4YW1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>					
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="rw_badge"></span>
+							<span class="mem_nick man">마지막인연찾음
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">안녕하세요. 처음엔 가볍게 시작 하는것도 좋은 방법이라 생각합니다. 그러나 차츰.. 서로의 눈높이를 맞춰가며 취미생활도 같이할 좋은 인연을 만나고 싶네요. 평소 자기관리 잘하고 정직하고 가정적인분 원합니다. 신뢰가 무너지면 모든게 물거품이됩니다. 퇴직후엔 배우자와 맘맞으면 몇개월이든 몇년이든 캠핑카로 전국을 유람할 계획입니다.^^; 사진이 없는분은 사진부터 주시고.. 그럼, 쪽지 기다릴께요~.~다.^^; 여백여백 여백여백                         
+                          <!--20170927 정우아 추가 및 수정-->
+                            <span class="info_cer" style="text-shadow:none; color:#ef5288; border-bottom:1px dashed #e884a9;">혼인관계증명서</span><span class="pn_badge cer_s" style="background:linear-gradient(to bottom, rgb(240, 154, 184) 0%,rgb(238, 75, 156) 100%);">2</span><span class="info_tt">연봉</span><span class="pn_badge">1</span><span class="info_tt">학력</span><span class="pn_badge">1</span><span class="info_tt">차량</span><span class="pn_badge">1</span>
+                          <!--//20170927 정우아 추가 및 수정-->
+						</a>
+					</span>
+				</div>
+				
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'100728', memNick:'마지막인연찾음', memName: '박○○님', memSex:'m', memAge:'53', distance:'경남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 박○○님
+							| 53세
+							| 뱀띠
+							| 경남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
+		<li id="ID_182644">
+		<form name="fmeet_182644" id="fmeet_182644" method="post" onsubmit="return false;" style="margin:0;">
+				<input type="hidden" name="memNo" value="182644">
+				<input type="hidden" name="memNick" value="하나의사랑">
+				<input type="hidden" name="meetSlct" value="1">
+				<input type="hidden" name="meetText" value="avata">
+				<input type="hidden" name="chrgrNm" value="">
+
+				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'182644','man','meetList');">
+					<span class="photo_box">
+						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
+						<a href="javascript:void(0);" id="mem_photo" onclick="">
+							<div class="ripple"></div>
+							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUlHQWZJT0dwSXBVYW1waWIzcURkNFdGZFkxV21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
+						</a>
+					</span>					
+					<span class="ment_txt font_r" style="line-height:1.4">
+						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
+						<a href="javascript:void(0);" class="goMemProfile">
+							&nbsp;&nbsp;
+                            <span class="nw_badge"></span>
+							<span class="mem_nick man">하나의사랑
+							
+							</span>
+							
+							&nbsp;&nbsp;
+							<span class="ment_conts" style="color:#e28451;font-size:0.9em; margin-right:10px;">안녕하세요. 만나서 반가워요. 저를 처음 보시는분은 다들 이렇게 물어보더라구요. 지금까지 왜 결혼못해냐구. 솔직하게 30대초반에 한여성분을 만나 30대후반에까지  한 여자분만 바라보고 결혼할거라믿어는돼 어찌하다보니까  세월만가버리고 이렇게 혼자가되어네요. 나이가들고 누구만나다는것이 이렇게 힘이들줄이야 몰라네요. 다시 인연이있다면은 생이마감할때까지 함께하고싶습니다.</span>
+                            <!--20170927 정우아 추가 및 수정-->
+                            <div class="info_cer" style="font-size:13px; text-shadow:none;">혼인관계증명서<span class="pn_badge cer_s">2</span></div>
+                            <div class="info_tt">연봉<span class="pn_badge">1</span></div>
+                            <div class="info_tt">학력<span class="pn_badge">2</span></div>
+                            <div class="info_tt">차량<span class="pn_badge">1</span></div>
+                            <!--//20170927 정우아 추가 및 수정-->
+						</a>
+					</span>
+				</div>
+				
+				<div class="list_info font_b">
+					<a href="javascript:void(0);" onclick="$.goCall({memNo:'182644', memNick:'하나의사랑', memName: '박○○님', memSex:'m', memAge:'41', distance:'전남'});">
+											<span class="mem_info man">
+							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
+							| 박○○님
+							| 41세
+							| 뱀띠
+							| 전남
+						</span>
+						<div class="list_btn font_m">연락하기</div>
+											</a>
+				</div>
+			</form>
+		</li>
 		<li id="ID_142470">
 		<form name="fmeet_142470" id="fmeet_142470" method="post" onsubmit="return false;" style="margin:0;">
 				<input type="hidden" name="memNo" value="142470">
@@ -840,108 +987,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2aeda', end
 							| 이○○님
 							| 47세
 							| 돼지띠
-							| 경남
-						</span>
-						<div class="list_btn font_m">연락하기</div>
-											</a>
-				</div>
-			</form>
-		</li>
-		<li id="ID_182644">
-		<form name="fmeet_182644" id="fmeet_182644" method="post" onsubmit="return false;" style="margin:0;">
-				<input type="hidden" name="memNo" value="182644">
-				<input type="hidden" name="memNick" value="하나의사랑">
-				<input type="hidden" name="meetSlct" value="1">
-				<input type="hidden" name="meetText" value="avata">
-				<input type="hidden" name="chrgrNm" value="">
-
-				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'182644','man','meetList');">
-					<span class="photo_box">
-						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">1</p></div>
-						<a href="javascript:void(0);" id="mem_photo" onclick="">
-							<div class="ripple"></div>
-							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUlHQWZJT0dwSXBVYW1waWIzcURkNFdGZFkxV21KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
-						</a>
-					</span>					
-					<span class="ment_txt font_r" style="line-height:1.4">
-						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
-						<a href="javascript:void(0);" class="goMemProfile">
-							&nbsp;&nbsp;
-                            <span class="nw_badge"></span>
-							<span class="mem_nick man">하나의사랑
-							
-							</span>
-							
-							&nbsp;&nbsp;
-							<span class="ment_conts" style="color:#e28451;font-size:0.9em; margin-right:10px;">안녕하세요. 만나서 반가워요. 저를 처음 보시는분은 다들 이렇게 물어보더라구요. 지금까지 왜 결혼못해냐구. 솔직하게 30대초반에 한여성분을 만나 30대후반에까지  한 여자분만 바라보고 결혼할거라믿어는돼 어찌하다보니까  세월만가버리고 이렇게 혼자가되어네요. 나이가들고 누구만나다는것이 이렇게 힘이들줄이야 몰라네요. 다시 인연이있다면은 생이마감할때까지 함께하고싶습니다.</span>
-                            <!--20170927 정우아 추가 및 수정-->
-                            <div class="info_cer" style="font-size:13px; text-shadow:none;">혼인관계증명서<span class="pn_badge cer_s">2</span></div>
-                            <div class="info_tt">연봉<span class="pn_badge">1</span></div>
-                            <div class="info_tt">학력<span class="pn_badge">2</span></div>
-                            <div class="info_tt">차량<span class="pn_badge">1</span></div>
-                            <!--//20170927 정우아 추가 및 수정-->
-						</a>
-					</span>
-				</div>
-				
-				<div class="list_info font_b">
-					<a href="javascript:void(0);" onclick="$.goCall({memNo:'182644', memNick:'하나의사랑', memName: '박○○님', memSex:'m', memAge:'41', distance:'전남'});">
-											<span class="mem_info man">
-							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
-							| 박○○님
-							| 41세
-							| 뱀띠
-							| 전남
-						</span>
-						<div class="list_btn font_m">연락하기</div>
-											</a>
-				</div>
-			</form>
-		</li>
-		<li id="ID_100728">
-		<form name="fmeet_100728" id="fmeet_100728" method="post" onsubmit="return false;" style="margin:0;">
-				<input type="hidden" name="memNo" value="100728">
-				<input type="hidden" name="memNick" value="마지막인연찾음">
-				<input type="hidden" name="meetSlct" value="0">
-				<input type="hidden" name="meetText" value="">
-				<input type="hidden" name="chrgrNm" value="">
-
-				<div class="ment_area" onclick="$.checkHaveMsgItemAndGoProfile(this,'100728','man','meetList');">
-					<span class="photo_box">
-						<div class="count_scrt_img"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/icon_badge2.png" width="23" height="23" class="count_img" alt="프로필사진갯수"><p class="count_num">4</p></div>
-						<a href="javascript:void(0);" id="mem_photo" onclick="">
-							<div class="ripple"></div>
-							<img src="http://photo.yeoboya.com/prg/yimg.php?type=photo&amp;sdir=&amp;viewname=YUhsK2ZZR0twSXBVYW1waWEzeCtlSUtHZkl4YW1KVmdvYm0x" align="left" onerror="$.noImgProc(this,'man');">
-						</a>
-					</span>					
-					<span class="ment_txt font_r" style="line-height:1.4">
-						<a href="javascript:void(0);" onclick="$.togChung(this);" class="img_chung"><img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/img_chung_s.gif" height="26" alt="청사초롱" align="left" style="-webkit-transform:translateZ(0);"></a>
-						<a href="javascript:void(0);" class="goMemProfile">
-							&nbsp;&nbsp;
-                            <span class="rw_badge"></span>
-							<span class="mem_nick man">마지막인연찾음
-							
-							</span>
-							
-							&nbsp;&nbsp;
-							<span class="ment_conts" style="color:#;font-size:0.9em; margin-right:10px;">안녕하세요. 처음엔 가볍게 시작 하는것도 좋은 방법이라 생각합니다. 그러나 차츰.. 서로의 눈높이를 맞춰가며 취미생활도 같이할 좋은 인연을 만나고 싶네요. 평소 자기관리 잘하고 정직하고 가정적인분 원합니다. 신뢰가 무너지면 모든게 물거품이됩니다. 퇴직후엔 배우자와 맘맞으면 몇개월이든 몇년이든 캠핑카로 전국을 유람할 계획입니다.^^; 사진이 없는분은 사진부터 주시고.. 그럼, 쪽지 기다릴께요~.~</span>
-                            <!--20170927 정우아 추가 및 수정-->
-                            <div class="info_cer" style="text-shadow:none; color:#ef5288; border-bottom:1px dashed #e884a9;"><span>혼인관계증명서</span><span class="pn_badge cer_s" style="background:linear-gradient(to bottom, rgb(240, 154, 184) 0%,rgb(238, 75, 156) 100%);">2</span></div>
-                            <div class="info_tt">연봉<span class="pn_badge">1</span></div>
-                            <div class="info_tt">학력<span class="pn_badge">2</span></div>
-                            <div class="info_tt">차량<span class="pn_badge">1</span></div>
-                            <!--//20170927 정우아 추가 및 수정-->
-						</a>
-					</span>
-				</div>
-				
-				<div class="list_info font_b">
-					<a href="javascript:void(0);" onclick="$.goCall({memNo:'100728', memNick:'마지막인연찾음', memName: '박○○님', memSex:'m', memAge:'53', distance:'경남'});">
-											<span class="mem_info man">
-							<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_man.jpg" width="15" height="13" class="sex">
-							| 박○○님
-							| 53세
-							| 뱀띠
 							| 경남
 						</span>
 						<div class="list_btn font_m">연락하기</div>
